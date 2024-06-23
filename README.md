@@ -36,10 +36,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
+This challenge encouraged me to conduct further research into the very important topics of accessibility and responsiveness. For example, I replaced px unit with rem unit where necessary and used semantic HTML elements, like <main> and <footer>. In addition, I used a CSS reset by Josh Comeau (https://www.joshwcomeau.com/css/custom-css-reset/) to eliminate incosistencies and applied BEM CSS naming convention to make the code easier to read and maintain.
+
 ```css
 @media (max-width: 375px) {
   div.card {
-    margin: 80px auto;
+    margin: 5rem auto;
   }
 }
 
@@ -59,6 +61,12 @@ After completing this challenge, I will continue learning new techniques on how 
 ### Useful resources
 
 - [Why font-size must NEVER be in pixels](https://fedmentor.dev/posts/font-size-px/) - This is an amazing article which helped me understand why using rem instead px results in making more accessible websites and it provides an easy-to-understand way to convert pixels to rem.
+
+- [How to write good alt text for screen readers](https://www.craigabbott.co.uk/blog/how-to-write-good-alt-text-for-screen-readers/) - After reading this article, I learned that alt texts need to provide more context.
+
+- [Understanding CSS naming conventions](https://www.frontendmentor.io/articles/understanding-css-naming-conventions-bem-oocss-smacss-and-suit-css-V6ZZUYs1xz) - A useful article by Frontend Mentor explaining the difference between various CSS naming conventions.
+
+- [10 fundamental web accessibility tips for front-end developers](https://www.frontendmentor.io/articles/10-fundamental-web-accessibility-tips-for-frontend-developers-rUurADGxCt#the-importance-of-web-accessibility) - A comprehensive guide on accessibility by Frontend Mentor.
 
 ## Author
 

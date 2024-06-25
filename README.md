@@ -36,13 +36,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-This challenge encouraged me to conduct further research into the very important topics of accessibility and responsiveness. For example, I replaced px unit with rem unit where necessary and used semantic HTML elements, like `main` and `footer`. In addition, I used a CSS reset by Josh Comeau (https://www.joshwcomeau.com/css/custom-css-reset/) to eliminate incosistencies and applied BEM CSS naming convention to make the code easier to read and maintain.
+This challenge encouraged me to conduct further research into the very important topics of accessibility and responsiveness. For example, I replaced px unit with rem unit where necessary and used semantic HTML elements, like `main` and `footer`. In addition, I used a modern CSS reset by Josh Comeau (https://www.joshwcomeau.com/css/custom-css-reset/) to eliminate incosistencies and applied BEM CSS naming convention to make the code easier to read and maintain.
 
 ```css
-@media (max-width: 375px) {
-  div.card {
-    margin: 5rem auto;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
 }
 
 img {

@@ -43,6 +43,12 @@ body {
   background: hsl(211, 46%, 89%);
   font-family: "Outfit", sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
 }
 
 div.card {
@@ -50,7 +56,6 @@ div.card {
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   max-width: 19rem;
-  margin: 9rem auto;
   padding: 1.25rem 0.75rem;
 }
 
@@ -58,7 +63,7 @@ div.card {
   padding: 0.6rem;
 }
 
-.card h1 {
+.card .card_heading {
   color: hsl(218, 44%, 22%);
   font-size: 1.4rem;
   font-weight: 700;
@@ -66,14 +71,19 @@ div.card {
   margin-bottom: 0.4rem;
 }
 
-.card p {
+.card .card_paragraph {
   color: hsl(220, 15%, 55%);
   font-size: 0.94rem;
   font-weight: 400;
 }
 
-.card img {
+.card .card_image {
   border-radius: 10px;
+  width: 100%;
+}
+
+footer {
+  margin-top: 3rem;
 }
 
 .attribution {
@@ -82,10 +92,4 @@ div.card {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 375px) {
-  div.card {
-    margin: 5rem auto;
-  }
 }
